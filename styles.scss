@@ -1,0 +1,37 @@
+@import "libraries/bourbon/bourbon";
+@import "libraries/neat/neat";
+
+$bg: black;
+
+body {
+  font-size: 16px;
+  @include outer-container;
+}
+
+.header {
+  background: $bg;
+  color: #FFF;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.col2 {
+  @include span-columns(6);
+}
+
+.col2 left {
+  @include span-columns(4)
+}
+
+.col2 right {
+  @include span-columns(8)
+}
+
+.footer {
+  background: $bg;
+  height: 100px;
+}
+
+.header, .footer {
+  text-align: center;
+}

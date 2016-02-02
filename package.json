@@ -1,0 +1,29 @@
+{
+  "name": "bourbon-example-project",
+  "version": "1.0.0",
+  "description": "Bourbon Neat Bitters Refills example project",
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StevenGFX/bourbon-example-project"
+  },
+  "keywords": [
+    "bourbon",
+    "neat",
+    "refills",
+    "bitters",
+    "sass",
+    "scss",
+    "node",
+    "npm"
+  ],
+  "author": "Steven Williams <me@stevengfx.com> (http://stevengfx.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "3.4.2",
+    "nodemon": "1.8.1"
+  }
+}
