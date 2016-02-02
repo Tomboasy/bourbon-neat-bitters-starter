@@ -20,4 +20,4 @@ $ npm run watch-css
 
 Now lets sip some bourbon!
 
-![bourbon!](http://imgur.com/LHKfbU0)
+![bourbon!](http://i.imgur.com/3oQtmOB.gifv)
