@@ -360,6 +360,39 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 60em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+  @media screen and (min-width: 600px) {
+    body:before {
+      background-image: -webkit-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
+      background-image: -moz-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
+      background-image: -ms-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
+      background-image: -o-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
+      background-image: linear-gradient(to left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%); } }
+  @media screen and (min-width: 900px) {
+    body:before {
+      background-image: -webkit-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
+      background-image: -moz-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
+      background-image: -ms-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
+      background-image: -o-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
+      background-image: linear-gradient(to left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%); } }
+
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #1565c0;
@@ -534,48 +567,176 @@ picture {
   max-width: 100%; }
 
 body {
-  font-size: 16px;
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto; }
-  body::after {
+  font: 1em "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 1.618em; }
+
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #1565c0;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: #104c90; }
+
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+body {
+  font: 1em "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 1.618em; }
+
+body {
+  color: #072f44;
+  line-height: 1.618em;
+  text-align: center; }
+
+h3 {
+  margin: 1em; }
+
+pre {
+  line-height: 1.6em; }
+
+header {
+  background-color: #298EC3;
+  padding: 0.5em 1em;
+  text-align: center; }
+  header::after {
     clear: both;
     content: "";
     display: table; }
+  header .wrapper {
+    max-width: 64em;
+    margin-left: auto;
+    margin-right: auto; }
+    header .wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+  header h1 {
+    color: #fff;
+    font-family: "helvetica Neue", "Helvetica", sans-serif;
+    font-weight: 100;
+    line-height: 1.618em; }
+  header .source {
+    display: inline-block;
+    background-color: white;
+    border-radius: 3px;
+    color: #298EC3;
+    font-size: 0.875em;
+    font-weight: bold;
+    margin-right: .5em;
+    margin-top: .5em;
+    padding: .5em 1em;
+    text-decoration: none; }
+    header .source:hover {
+      background-color: rgba(255, 255, 255, 0.7); }
 
-.header {
-  background: black;
-  color: #FFF;
-  padding: 1em;
-  font-size: 2em; }
+section {
+  background-color: #D5EEFB;
+  text-align: center;
+  line-height: 2.427em; }
+  section div {
+    background-color: #AADBF5;
+    font-size: 0.8em;
+    margin-bottom: 2em; }
+  section.first div#gamma aside, section.first div#gamma article {
+    background-color: #FFF; }
+  section.second div#beta aside, section.second div#beta article {
+    background-color: #41A8DF; }
+  section.second div#beta aside {
+    border-bottom: 1px solid #298EC3; }
+  section.third div#dummy {
+    background-color: #AADBF5;
+    margin-bottom: 0; }
+  section.third div#alpha aside {
+    background-color: #41A8DF;
+    border-bottom: 1px solid #298EC3; }
+  section.third div#alpha article {
+    background-color: #41A8DF; }
+  section.sixth > pre {
+    padding: 10px 0; }
+  @media screen and (max-width: 500px) {
+    section.sixth {
+      font-size: 0.9em;
+      line-height: 1.5em; } }
+  section.sixth div {
+    line-height: 2em;
+    min-height: 20em;
+    text-align: left;
+    padding: 1em; }
+  section.sixth div#alpha {
+    float: left;
+    display: block;
+    margin-right: 4.56432%;
+    width: 30.29046%; }
+    section.sixth div#alpha:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      section.sixth div#alpha {
+        float: left;
+        display: block;
+        margin-right: 15.06849%;
+        width: 71.23288%; }
+        section.sixth div#alpha:last-child {
+          margin-right: 0; } }
+  section.sixth div#beta {
+    float: left;
+    display: block;
+    margin-right: 4.56432%;
+    width: 65.14523%; }
+    section.sixth div#beta:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      section.sixth div#beta {
+        float: left;
+        display: block;
+        margin-right: 15.06849%;
+        width: 71.23288%; }
+        section.sixth div#beta:last-child {
+          margin-right: 0; } }
 
-.col2 {
-  float: left;
+div.code {
+  background-color: #D5EEFB;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+footer {
+  padding: 2em;
   display: block;
-  margin-right: 4.56432%;
-  width: 47.71784%; }
-  .col2:last-child {
-    margin-right: 0; }
-
-.col2 left {
-  float: left;
-  display: block;
-  margin-right: 4.56432%;
-  width: 30.29046%; }
-  .col2 left:last-child {
-    margin-right: 0; }
-
-.col2 right {
-  float: left;
-  display: block;
-  margin-right: 4.56432%;
-  width: 65.14523%; }
-  .col2 right:last-child {
-    margin-right: 0; }
-
-.footer {
-  background: black;
-  height: 100px; }
-
-.header, .footer {
-  text-align: center; }
+  clear: both; }
+  footer a.back-button {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    background-color: #298EC3; }
+    footer a.back-button:hover {
+      background-color: #072f44; }

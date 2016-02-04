@@ -1,5 +1,5 @@
 {
-  "name": "bourbon-example-project",
+  "name": "bourbon-demo-project",
   "version": "1.0.0",
   "description": "Bourbon Neat Bitters Refills example project",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/StevenGFX/bourbon-example-project"
+    "url": "https://github.com/StevenGFX/bourbon-demo-project"
   },
   "keywords": [
     "bourbon",

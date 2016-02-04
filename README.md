@@ -1,9 +1,9 @@
-# Bourbon Neat Bitters Refills Example Project
+# Bourbon Neat Bitters Refills Demo Project
 
 Clone the project from GitHub
 
 ```
-$ git clone https://github.com/StevenGFX/bourbon-example-project.git
+$ git clone https://github.com/StevenGFX/bourbon-demo-project.git
 ```
 
 Install project dependencies.
