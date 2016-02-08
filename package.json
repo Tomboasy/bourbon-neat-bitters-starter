@@ -1,7 +1,7 @@
 {
   "name": "bourbon-demo-project",
   "version": "1.0.0",
-  "description": "Bourbon Neat Bitters Refills example project",
+  "description": "Bourbon Neat Bitters demo node project",
   "scripts": {
     "build-css": "./bin/build-css",
     "watch-css": "./bin/watch-css"
