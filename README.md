@@ -38,4 +38,4 @@ Now lets sip some bourbon!
 - [Neat](https://github.com/thoughtbot/neat): A lightweight semantic grid framework for Sass and Bourbon
 - [Bitters](https://github.com/thoughtbot/bitters): Scaffold styles, variables and structure for Bourbon projects
 - [Refills](https://github.com/thoughtbot/refills): Prepackaged patterns and components built with Bourbon, Neat and Bitters
-- [SMACSS](https://smacss.com): Scalable and Modular Architechture for CSS
+- [SMACSS](https://smacss.com): Scalable and Modular Architecture for CSS
