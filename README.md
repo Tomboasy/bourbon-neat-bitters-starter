@@ -1,3 +1,5 @@
+![img](https://img.shields.io/badge/status-work--in--progress-yellow.svg)
+
 Bourbon Demo Project
 ===========
 
@@ -39,3 +41,6 @@ Now lets sip some bourbon!
 - [Bitters](https://github.com/thoughtbot/bitters): Scaffold styles, variables and structure for Bourbon projects
 - [Refills](https://github.com/thoughtbot/refills): Prepackaged patterns and components built with Bourbon, Neat and Bitters
 - [SMACSS](https://smacss.com): Scalable and Modular Architecture for CSS
+
+
+[@stevengfx](https://twitter.com/stevengfx) 2016
