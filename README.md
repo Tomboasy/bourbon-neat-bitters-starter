@@ -4,6 +4,7 @@ Bourbon Demo Project
 SCSS Framework for Bourbon Neat Bitters projects utilizing SMACSS
 
 **Dependencies:**
+
 Node.js http://nodejs.org  
 NPM https://www.npmjs.com/
 
