@@ -1,4 +1,9 @@
-/***** 3rd Party Components *****/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -27,29 +32,14 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio,
-canvas,
-progress,
-video {
+audio, canvas, progress, video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -67,8 +57,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
-[hidden],
-template {
+[hidden], template {
   display: none; }
 
 /* Links
@@ -78,29 +67,40 @@ template {
  */
 a {
   background-color: transparent; }
+  a:active, a:hover {
+    outline: 0; }
 
 /**
  * Improve readability of focused elements when they are also in an
  * active/hover state.
  */
-a:active,
-a:hover {
-  outline: 0; }
-
 /* Text-level semantics
    ========================================================================== */
 /**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ * Address inconsistent styling of `abbr[title]`.
+ * 1. Correct styling in Firefox 39 and Opera 12.
+ * 2. Correct missing styling in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
 
 /**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ * Address inconsistent styling of b and strong.
+ * 1. Correct duplicate application of `bolder` in Safari 6.0.2.
+ * 2. Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+.
  */
-b,
-strong {
-  font-weight: bold; }
+b, strong {
+  font-weight: inherit;
+  /* 1 */ }
+
+b, strong {
+  font-weight: bolder;
+  /* 2 */ }
 
 /**
  * Address styling not present in Safari and Chrome.
@@ -120,7 +120,7 @@ h1 {
  * Address styling not present in IE 8/9.
  */
 mark {
-  background: #ff0;
+  background-color: #ff0;
   color: #000; }
 
 /**
@@ -132,14 +132,17 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub,
-sup {
+sub {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
 sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
   top: -0.5em; }
 
 sub {
@@ -168,11 +171,17 @@ figure {
   margin: 1em 40px; }
 
 /**
- * Address differences between Firefox and other browsers.
+ * Address inconsistent styling of `hr`.
+ * 1. Correct `box-sizing` set to `border-box` in Firefox.
+ * 2. Correct `overflow` set to `hidden` in IE 8/9/10/11 and Edge 12.
  */
 hr {
   box-sizing: content-box;
-  height: 0; }
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
 
 /**
  * Contain overflow in all browsers.
@@ -181,14 +190,14 @@ pre {
   overflow: auto; }
 
 /**
- * Address odd `em`-unit font size rendering in all browsers.
+ * 1. Correct inheritance and scaling of font-size for preformatted text.
+ * 2. Address odd `em`-unit font size rendering in all browsers.
  */
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
 
 /* Forms
    ========================================================================== */
@@ -197,28 +206,21 @@ samp {
  * styling of `select`, unless a `border` property is set.
  */
 /**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 1. Correct font properties not being inherited.
+ * 2. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
+button, input, optgroup, select, textarea {
   font: inherit;
-  /* 2 */
+  /* 1 */
   margin: 0;
-  /* 3 */ }
+  /* 2 */ }
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 button {
-  overflow: visible; }
+  overflow: visible;
+  text-transform: none; }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -226,7 +228,6 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button,
 select {
   text-transform: none; }
 
@@ -237,10 +238,13 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -249,25 +253,42 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
+
+/**
+ * Restore focus style in Firefox 4+ (unset by a rule above)
+ */
+button:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+input {
+  line-height: normal; }
+  input:-moz-focusring {
+    outline: 1px dotted ButtonText; }
+  input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto; }
+  input[type="search"] {
+    -webkit-appearance: textfield; }
+    input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none; }
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-input {
-  line-height: normal; }
-
 /**
  * It's recommended that you don't attempt to style these elements.
  * Firefox's implementation doesn't respect box-sizing, padding, or width.
@@ -275,41 +296,19 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
 /**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ * Address `appearance` set to `searchfield` in Safari and Chrome.
  */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  box-sizing: content-box;
-  /* 2 */ }
-
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
 /**
  * Define consistent border, margin, and padding.
  */
@@ -335,63 +334,11 @@ textarea {
   overflow: auto; }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
+ * Restore font weight (unset by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 optgroup {
   font-weight: bold; }
-
-/* Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
-
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
-  background-image: -moz-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
-  background-image: -ms-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
-  background-image: -o-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
-  background-image: linear-gradient(to left, transparent 0, #E6F6FF 0, #E6F6FF 4.14938%, transparent 4.14938%, transparent 8.71369%, #E6F6FF 8.71369%, #E6F6FF 12.86307%, transparent 12.86307%, transparent 17.42739%, #E6F6FF 17.42739%, #E6F6FF 21.57676%, transparent 21.57676%, transparent 26.14108%, #E6F6FF 26.14108%, #E6F6FF 30.29046%, transparent 30.29046%, transparent 34.85477%, #E6F6FF 34.85477%, #E6F6FF 39.00415%, transparent 39.00415%, transparent 43.56846%, #E6F6FF 43.56846%, #E6F6FF 47.71784%, transparent 47.71784%, transparent 52.28216%, #E6F6FF 52.28216%, #E6F6FF 56.43154%, transparent 56.43154%, transparent 60.99585%, #E6F6FF 60.99585%, #E6F6FF 65.14523%, transparent 65.14523%, transparent 69.70954%, #E6F6FF 69.70954%, #E6F6FF 73.85892%, transparent 73.85892%, transparent 78.42324%, #E6F6FF 78.42324%, #E6F6FF 82.57261%, transparent 82.57261%, transparent 87.13693%, #E6F6FF 87.13693%, #E6F6FF 91.28631%, transparent 91.28631%, transparent 95.85062%, #E6F6FF 95.85062%, #E6F6FF 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 60em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-  @media screen and (min-width: 600px) {
-    body:before {
-      background-image: -webkit-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
-      background-image: -moz-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
-      background-image: -ms-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
-      background-image: -o-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%);
-      background-image: linear-gradient(to left, transparent 0, #E6F6FF 0, #E6F6FF 13.69863%, transparent 13.69863%, transparent 28.76712%, #E6F6FF 28.76712%, #E6F6FF 42.46575%, transparent 42.46575%, transparent 57.53425%, #E6F6FF 57.53425%, #E6F6FF 71.23288%, transparent 71.23288%, transparent 86.30137%, #E6F6FF 86.30137%, #E6F6FF 100%, transparent 100%); } }
-  @media screen and (min-width: 900px) {
-    body:before {
-      background-image: -webkit-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
-      background-image: -moz-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
-      background-image: -ms-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
-      background-image: -o-linear-gradient(left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%);
-      background-image: linear-gradient(to left, transparent 0, #E6F6FF 0, #E6F6FF 6.36943%, transparent 6.36943%, transparent 13.3758%, #E6F6FF 13.3758%, #E6F6FF 19.74522%, transparent 19.74522%, transparent 26.75159%, #E6F6FF 26.75159%, #E6F6FF 33.12102%, transparent 33.12102%, transparent 40.12739%, #E6F6FF 40.12739%, #E6F6FF 46.49682%, transparent 46.49682%, transparent 53.50318%, #E6F6FF 53.50318%, #E6F6FF 59.87261%, transparent 59.87261%, transparent 66.87898%, #E6F6FF 66.87898%, #E6F6FF 73.24841%, transparent 73.24841%, transparent 80.25478%, #E6F6FF 80.25478%, #E6F6FF 86.6242%, transparent 86.6242%, transparent 93.63057%, #E6F6FF 93.63057%, #E6F6FF 100%, transparent 100%); } }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
@@ -565,178 +512,3 @@ img,
 picture {
   margin: 0;
   max-width: 100%; }
-
-body {
-  font: 1em "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  line-height: 1.618em; }
-
-body {
-  color: #333;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  line-height: 1.5; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  line-height: 1.2;
-  margin: 0 0 0.75em; }
-
-p {
-  margin: 0 0 0.75em; }
-
-a {
-  color: #1565c0;
-  text-decoration: none;
-  transition: color 150ms ease; }
-  a:active, a:focus, a:hover {
-    color: #104c90; }
-
-hr {
-  border-bottom: 1px solid #ddd;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: 1.5em 0; }
-
-img,
-picture {
-  margin: 0;
-  max-width: 100%; }
-
-body {
-  font: 1em "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  line-height: 1.618em; }
-
-body {
-  color: #072f44;
-  line-height: 1.618em;
-  text-align: center; }
-
-h3 {
-  margin: 1em; }
-
-pre {
-  line-height: 1.6em; }
-
-header {
-  background-color: #298EC3;
-  padding: 0.5em 1em;
-  text-align: center; }
-  header::after {
-    clear: both;
-    content: "";
-    display: table; }
-  header .wrapper {
-    max-width: 64em;
-    margin-left: auto;
-    margin-right: auto; }
-    header .wrapper::after {
-      clear: both;
-      content: "";
-      display: table; }
-  header h1 {
-    color: #fff;
-    font-family: "helvetica Neue", "Helvetica", sans-serif;
-    font-weight: 100;
-    line-height: 1.618em; }
-  header .source {
-    display: inline-block;
-    background-color: white;
-    border-radius: 3px;
-    color: #298EC3;
-    font-size: 0.875em;
-    font-weight: bold;
-    margin-right: .5em;
-    margin-top: .5em;
-    padding: .5em 1em;
-    text-decoration: none; }
-    header .source:hover {
-      background-color: rgba(255, 255, 255, 0.7); }
-
-section {
-  background-color: #D5EEFB;
-  text-align: center;
-  line-height: 2.427em; }
-  section div {
-    background-color: #AADBF5;
-    font-size: 0.8em;
-    margin-bottom: 2em; }
-  section.first div#gamma aside, section.first div#gamma article {
-    background-color: #FFF; }
-  section.second div#beta aside, section.second div#beta article {
-    background-color: #41A8DF; }
-  section.second div#beta aside {
-    border-bottom: 1px solid #298EC3; }
-  section.third div#dummy {
-    background-color: #AADBF5;
-    margin-bottom: 0; }
-  section.third div#alpha aside {
-    background-color: #41A8DF;
-    border-bottom: 1px solid #298EC3; }
-  section.third div#alpha article {
-    background-color: #41A8DF; }
-  section.sixth > pre {
-    padding: 10px 0; }
-  @media screen and (max-width: 500px) {
-    section.sixth {
-      font-size: 0.9em;
-      line-height: 1.5em; } }
-  section.sixth div {
-    line-height: 2em;
-    min-height: 20em;
-    text-align: left;
-    padding: 1em; }
-  section.sixth div#alpha {
-    float: left;
-    display: block;
-    margin-right: 4.56432%;
-    width: 30.29046%; }
-    section.sixth div#alpha:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 500px) {
-      section.sixth div#alpha {
-        float: left;
-        display: block;
-        margin-right: 15.06849%;
-        width: 71.23288%; }
-        section.sixth div#alpha:last-child {
-          margin-right: 0; } }
-  section.sixth div#beta {
-    float: left;
-    display: block;
-    margin-right: 4.56432%;
-    width: 65.14523%; }
-    section.sixth div#beta:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 500px) {
-      section.sixth div#beta {
-        float: left;
-        display: block;
-        margin-right: 15.06849%;
-        width: 71.23288%; }
-        section.sixth div#beta:last-child {
-          margin-right: 0; } }
-
-div.code {
-  background-color: #D5EEFB;
-  text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em; }
-
-footer {
-  padding: 2em;
-  display: block;
-  clear: both; }
-  footer a.back-button {
-    text-decoration: none;
-    color: white;
-    padding: 0.5em 1em;
-    background-color: #298EC3; }
-    footer a.back-button:hover {
-      background-color: #072f44; }
