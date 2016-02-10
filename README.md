@@ -34,19 +34,15 @@ Now lets sip some bourbon!
 
 ![bourbon!](http://i.imgur.com/3oQtmOB.gif)
 
-## Helpful Links
-
-- [Bourbon](https://github.com/thoughtbot/bourbon): A simple and lightweight mixin library for Sass
-- [Neat](https://github.com/thoughtbot/neat): A lightweight semantic grid framework for Sass and Bourbon
-- [Bitters](https://github.com/thoughtbot/bitters): Scaffold styles, variables and structure for Bourbon projects
-- [Refills](https://github.com/thoughtbot/refills): Prepackaged patterns and components built with Bourbon, Neat and Bitters
-- [SMACSS](https://smacss.com): Scalable and Modular Architecture for CSS
-
 ## The Bourbon family
 
 - [Bourbon](https://github.com/thoughtbot/bourbon): A simple and lightweight mixin library for Sass
 - [Neat](https://github.com/thoughtbot/neat): A lightweight semantic grid framework for Sass and Bourbon
 - [Bitters](https://github.com/thoughtbot/bitters): Scaffold styles, variables and structure for Bourbon projects
 - [Refills](https://github.com/thoughtbot/refills): Prepackaged patterns and components built with Bourbon, Neat and Bitters
+
+## Helpful Links
+
+- [SMACSS](https://smacss.com): Scalable and Modular Architecture for CSS
 
 &mdash; [@stevengfx](https://twitter.com/stevengfx) 2016
