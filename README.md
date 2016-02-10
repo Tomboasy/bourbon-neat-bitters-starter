@@ -3,11 +3,11 @@
 Bourbon Demo Project
 ===========
 
-SCSS Framework for Bourbon Neat Bitters projects utilizing SMACSS
+Bourbon Neat Bitters Project scaffolding project utilizing SMACSS with node-sass, autoprefixer and browser-sync.
 
 **Dependencies:**
 
-- [Node.js](https://nodejs.org) 
+- [Node.js](https://nodejs.org)
 - [NPM](http://www.npmjs.com)
 
 ## Getting Started
@@ -42,5 +42,11 @@ Now lets sip some bourbon!
 - [Refills](https://github.com/thoughtbot/refills): Prepackaged patterns and components built with Bourbon, Neat and Bitters
 - [SMACSS](https://smacss.com): Scalable and Modular Architecture for CSS
 
+## The Bourbon family
+
+- [Bourbon](https://github.com/thoughtbot/bourbon): A simple and lightweight mixin library for Sass
+- [Neat](https://github.com/thoughtbot/neat): A lightweight semantic grid framework for Sass and Bourbon
+- [Bitters](https://github.com/thoughtbot/bitters): Scaffold styles, variables and structure for Bourbon projects
+- [Refills](https://github.com/thoughtbot/refills): Prepackaged patterns and components built with Bourbon, Neat and Bitters
 
 &mdash; [@stevengfx](https://twitter.com/stevengfx) 2016

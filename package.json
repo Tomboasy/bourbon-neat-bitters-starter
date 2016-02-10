@@ -1,7 +1,7 @@
 {
   "name": "bourbon-demo-project",
   "version": "1.0.0",
-  "description": "Bourbon Neat Bitters Project scaffolding with node-sass, nodemon, autoprefixer and browser-sync.",
+  "description": "Bourbon Neat Bitters Project scaffolding project utilizing SMACSS with node-sass, autoprefixer and browser-sync.",
   "scripts": {
     "build-css": "bin/build-css & npm run post-css",
     "post-css": "bin/post-css",
@@ -17,6 +17,8 @@
     "neat",
     "refills",
     "bitters",
+    "SMACSS",
+    "BEM",
     "sass",
     "scss",
     "node",
