@@ -3,7 +3,7 @@
 Bourbon Neat Bitters Project Starter
 ===========
 
-Bourbon Neat Bitters Project scaffolding project utilizing SMACSS with node-sass, autoprefixer and browser-sync.
+Bourbon Neat Bitters Project scaffolding utilizing SMACSS with node-sass, autoprefixer and browser-sync.
 
 **Dependencies:**
 
