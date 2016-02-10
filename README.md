@@ -1,6 +1,6 @@
 ![img](https://img.shields.io/badge/status-work--in--progress-yellow.svg)
 
-Bourbon Demo Project
+Bourbon Neat Bitters Project Starter
 ===========
 
 Bourbon Neat Bitters Project scaffolding project utilizing SMACSS with node-sass, autoprefixer and browser-sync.
@@ -15,7 +15,7 @@ Bourbon Neat Bitters Project scaffolding project utilizing SMACSS with node-sass
 Clone the project from GitHub
 
 ```
-$ git clone https://github.com/StevenGFX/bourbon-demo-project.git
+$ git clone https://github.com/StevenGFX/bourbon-neat-bitters-starter.git
 ```
 
 Install project dependencies.
