@@ -1,9 +1,10 @@
 {
   "name": "bourbon-demo-project",
   "version": "1.0.0",
-  "description": "Bourbon Neat Bitters Project scaffolding with node-sass, nodemon, and browser-sync.",
+  "description": "Bourbon Neat Bitters Project scaffolding with node-sass, nodemon, autoprefixer and browser-sync.",
   "scripts": {
-    "build-css": "bin/build-css",
+    "build-css": "bin/build-css & npm run post-css",
+    "post-css": "bin/post-css",
     "watch-css": "bin/watch-css & npm run browser-sync",
     "browser-sync": "bin/browser-sync"
   },
@@ -21,14 +22,17 @@
     "node",
     "npm",
     "node-sass",
+    "autoprefixer",
     "nodemon",
     "browser-sync"
   ],
   "author": "Steven Williams <me@stevengfx.com> (http://stevengfx.com/)",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "3.4.2",
-    "nodemon": "1.8.1",
-    "browser-sync": "^2.11.1"
+    "autoprefixer": "^6.3.1",
+    "browser-sync": "^2.11.1",
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1",
+    "postcss-cli": "^2.5.0"
   }
 }
