@@ -1,10 +1,11 @@
 {
   "name": "bourbon-demo-project",
   "version": "1.0.0",
-  "description": "Bourbon Neat Bitters demo node project",
+  "description": "Bourbon Neat Bitters Project scaffolding with node-sass, nodemon, and browser-sync.",
   "scripts": {
     "build-css": "bin/build-css",
-    "watch-css": "bin/watch-css"
+    "watch-css": "bin/watch-css & npm run browser-sync",
+    "browser-sync": "bin/browser-sync"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,16 @@
     "sass",
     "scss",
     "node",
-    "npm"
+    "npm",
+    "node-sass",
+    "nodemon",
+    "browser-sync"
   ],
   "author": "Steven Williams <me@stevengfx.com> (http://stevengfx.com/)",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "3.4.2",
-    "nodemon": "1.8.1"
+    "nodemon": "1.8.1",
+    "browser-sync": "^2.11.1"
   }
 }
