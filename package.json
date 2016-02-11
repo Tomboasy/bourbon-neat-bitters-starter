@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Bourbon Neat Bitters Project scaffolding utilizing SMACSS with node-sass, autoprefixer and browser-sync.",
   "scripts": {
+    "lint-sass": "bin/lint-sass",
     "build-css": "bin/build-css & npm run post-css",
     "post-css": "bin/post-css",
     "watch-css": "bin/watch-css & npm run browser-sync",
@@ -35,6 +36,9 @@
     "browser-sync": "^2.11.1",
     "node-sass": "^3.4.2",
     "nodemon": "^1.8.1",
-    "postcss-cli": "^2.5.0"
+    "postcss-cli": "^2.5.0",
+    "sass-lint": "^1.5.0",
+    "uglifycss": "0.0.20",
+    "uglifyjs": "^2.4.10"
   }
 }
