@@ -1,6 +1,7 @@
 ![img](https://img.shields.io/badge/status-work--in--progress-yellow.svg)
 
 Bourbon Neat Bitters Project Starter
+
 ===========
 
 Bourbon Neat Bitters Project scaffolding utilizing SMACSS with node-sass, autoprefixer and browser-sync.
