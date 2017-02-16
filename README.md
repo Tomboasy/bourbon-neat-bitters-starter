@@ -45,4 +45,4 @@ Now lets sip some bourbon!
 
 - [SMACSS](https://smacss.com): Scalable and Modular Architecture for CSS
 
-&mdash; [@stevengfx](https://twitter.com/stevengfx) 2016
+&mdash; [@stevengfx](https://twitter.com/stevengfx) 2017
