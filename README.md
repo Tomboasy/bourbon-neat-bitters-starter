@@ -5,7 +5,7 @@ Bourbon Neat Bitters Project Starter
 
 Bourbon Neat Bitters Project scaffolding utilizing SMACSS with node-sass, autoprefixer and browser-sync.
 
-**Dependencies:**
+**Dependencies**
 
 - [Node.js](https://nodejs.org)
 - [NPM](http://www.npmjs.com)
